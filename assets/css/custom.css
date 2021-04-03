@@ -27,6 +27,25 @@
   text-decoration: none;
 }
 
+.product-row {
+  margin-top: 130px; /* Temporary */
+  background-color: white;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: dimgray;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-indicators .active {
+  width: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
@@ -50,6 +69,9 @@
   .breadcrumb {
     margin-left: 75px;
   }
+  .product-row {
+    border-radius: 15px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -66,5 +88,8 @@
   }
   .breadcrumb {
     margin-left: 75px;
+  }
+  .product-row {
+    border-radius: 15px;
   }
 }

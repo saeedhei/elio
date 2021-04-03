@@ -77,13 +77,95 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item small"><a class="text-secondary" href="#">Home</a></li>
-                    <li class="breadcrumb-item small"><a class="text-secondary" href="#">Library</a></li>
-                    <li class="breadcrumb-item small"><a class="text-secondary" href="#">Library</a></li>
-                    <li class="breadcrumb-item small"><a class="text-secondary" href="#">Library</a></li>
-                    <li class="breadcrumb-item small"><a class="text-secondary" href="#">Library</a></li>
+                    <li class="breadcrumb-item small"><a class="text-secondary" href="#">Startseite</a></li>
+                    <li class="breadcrumb-item small"><a class="text-secondary" href="#">Märkte</a></li>
+                    <li class="breadcrumb-item small"><a class="text-secondary" href="#">Dutenhofen</a></li>
+                    <li class="breadcrumb-item small"><a class="text-secondary" href="#">Obst & Gemüse</a></li>
+                    <li class="breadcrumb-item small"><a class="text-secondary" href="#">Cherry Tomaten</a></li>
                 </ol>
             </nav>
+        </div>
+
+        <div class="container">
+            <div class="row product-row">
+                <div class="col-sm">
+                    <div id="carouselExampleIndicators" class="carousel slide p-5" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.gemuesebau-steiner.de/wp-content/uploads/2016/10/Roma-Rispentomate-Aromatica_bei-REWE_Gemuesebau-Steiner.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.gemuesebau-steiner.de/wp-content/uploads/2016/10/Roma-Rispentomate-Aromatica_bei-REWE_Gemuesebau-Steiner.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.gemuesebau-steiner.de/wp-content/uploads/2016/10/Roma-Rispentomate-Aromatica_bei-REWE_Gemuesebau-Steiner.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="row pt-4">
+                        <div class="col">
+                            <h4 class="text-secondary m-0">Cherry Tomaten</h4>
+                            <p class="text-secondary">Globus</p>
+                        </div>
+                        <div class="col text-center">
+                            <button class="btn btn-danger btn-md py-0 px-1">Angebot</button>
+                            <button class="btn btn-success btn-md py-0 px-1">Neu</button>
+                        </div>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="d-flex bd-highlight mb-3">
+                            <h4 class="text-secondary">2,10 €</h4>
+                            <p class="text-secondary category h6"><strike class="p-2">2,60 €</strike></p>
+                            <div class="col ms-auto">
+                                <div class="text-secondary p-2 small text-end">Soll es eine andere Größe sein?</div>
+                                <div class="d-grid gap-2 d-flex justify-content-md-end">
+                                    <button class="btn btn-outline-secondary me-md-0 py-1 px-3" type="button">500
+                                        g</button>
+                                    <button class="btn btn-outline-secondary py-1 px-3" type="button">300 g</button>
+                                    <button class="btn btn-outline-secondary py-1 px-3" type="button">250 g</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="d-flex justify-content-end bd-highlight mb-3">
+                            <p class="text-secondary me-3">Vergleichen</p>
+                            <button class="btn btn-warning btn-md py-2 px-2">
+                                <i class="fa fa-sync-alt fa-lg fa-fw text-light"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex align-items-start justify-content-end bd-highlight mb-3">
+                            <div class="input-group mt-3 me-5">
+                                <span class="input-group-text bg-secondary btn-number" data-type="minus"
+                                    data-field="quant[1]">-</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
+                                    value="1" min="1" max="10" name="quant[1]">
+                                <span class="input-group-text bg-secondary btn-number" data-type="plus"
+                                    data-field="quant[1]">+</span>
+                            </div>
+                            <p class="text-secondary me-3">Auf die Einkaufsliste</p>
+                            <button class="btn btn-success btn-md py-2 px-2">
+                                <i class="fab fa-shopify fa-lg fa-fw text-light"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -107,6 +189,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 
