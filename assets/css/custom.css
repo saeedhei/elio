@@ -1,5 +1,6 @@
 .navbar-brand-txt {
   color: transparent;
+  margin-right: 4rem;
 }
 
 .navbar-brand-img {
@@ -47,7 +48,7 @@
 }
 
 .input-group-product {
-  width: 120px;
+  width: 150px;
 }
 
 .tab-title {
@@ -72,6 +73,9 @@
   .product-row {
     border-radius: 15px;
   }
+  .input-group-product {
+    width: 130px;
+  }
   .tab-title {
     font-size: 1rem;
   }
@@ -83,7 +87,7 @@
     width: 70%;
   }
   .navbar-brand-img {
-    left: -1%;
+    left: 0%;
     top: -30px;
     padding: 25px 10px 25px 10px;
     width: 120px;
@@ -109,7 +113,7 @@
     width: 70%;
   }
   .navbar-brand-img {
-    left: -1%;
+    left: 0%;
     top: -30px;
     padding: 25px 10px 25px 10px;
     width: 120px;
