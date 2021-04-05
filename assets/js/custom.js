@@ -81,4 +81,107 @@ $(document).ready(function () {
   $(".product-op-c").click(function (e) {
     $(".product-price-title").html("2,10 €");
   });
+
+  // Carousel Slider
+  var data = {
+    products: [
+      {
+        title: "Dulcita",
+        image:
+          "https://festival-supermarkt.de/fuchsbau/wp-content/uploads/sites/2/2019/07/og-005-Tomaten-600x600.jpg",
+      },
+      {
+        title: "Cherry Tomaten",
+        image:
+          "https://festival-supermarkt.de/fuchsbau/wp-content/uploads/sites/2/2019/07/og-005-Tomaten-600x600.jpg",
+      },
+      {
+        title: "Champignon",
+        image:
+          "https://festival-supermarkt.de/fuchsbau/wp-content/uploads/sites/2/2019/07/og-005-Tomaten-600x600.jpg",
+      },
+      {
+        title: "a title",
+        image:
+          "https://festival-supermarkt.de/fuchsbau/wp-content/uploads/sites/2/2019/07/og-005-Tomaten-600x600.jpg",
+      },
+      {
+        title: "b title",
+        image:
+          "https://festival-supermarkt.de/fuchsbau/wp-content/uploads/sites/2/2019/07/og-005-Tomaten-600x600.jpg",
+      },
+      {
+        title: "c title",
+        image:
+          "https://festival-supermarkt.de/fuchsbau/wp-content/uploads/sites/2/2019/07/og-005-Tomaten-600x600.jpg",
+      },
+      {
+        title: "d title",
+        image:
+          "https://festival-supermarkt.de/fuchsbau/wp-content/uploads/sites/2/2019/07/og-005-Tomaten-600x600.jpg",
+      },
+      {
+        title: "e title",
+        image:
+          "https://festival-supermarkt.de/fuchsbau/wp-content/uploads/sites/2/2019/07/og-005-Tomaten-600x600.jpg",
+      },
+      {
+        title: "f title",
+        image:
+          "https://festival-supermarkt.de/fuchsbau/wp-content/uploads/sites/2/2019/07/og-005-Tomaten-600x600.jpg",
+      },
+      {
+        title: "g title",
+        image:
+          "https://festival-supermarkt.de/fuchsbau/wp-content/uploads/sites/2/2019/07/og-005-Tomaten-600x600.jpg",
+      },
+    ],
+  };
+  $.each(data.products, function (k, v) {
+    var title = v.title;
+    var image = v.image;
+    var product = `<div class="swiper-slide"><div class="card" style="width: 18rem;">
+      <img src="${image}" class="card-img-top" alt="...">
+      <div class="card-body pt-0">
+        <h5 class="card-title h6 mb-1">${title}</h5>
+        <p class="card-text small">Globus</p>
+      </div>
+    </div>
+  </div>`;
+    $(".carousel-slider-data").append(product);
+  });
+
+  // Initialize Swiper
+  var swiper = new Swiper(".swiper-container", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        slidesPerGroup: 3,
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        slidesPerGroup: 5,
+      },
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        slidesPerGroup: 5,
+      },
+    },
+  });
 });
