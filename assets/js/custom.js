@@ -72,4 +72,13 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
+  $(".product-op-a").click(function (e) {
+    $(".product-price-title").html("3,50 €");
+  });
+  $(".product-op-b").click(function (e) {
+    $(".product-price-title").html("2,80 €");
+  });
+  $(".product-op-c").click(function (e) {
+    $(".product-price-title").html("2,10 €");
+  });
 });

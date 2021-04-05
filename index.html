@@ -73,7 +73,7 @@
     </header>
 
     <!-- Product Section -->
-    <section class="pt-1 pb-5 mb-5 bg-dark text-white">
+    <section class="pt-1 pb-5 bg-dark text-white">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -127,15 +127,17 @@
                     </div>
                     <div class="row pt-4">
                         <div class="d-flex bd-highlight mb-3">
-                            <h4 class="text-secondary">2,10 €</h4>
+                            <h4 class="text-secondary product-price-title">2,10 €</h4>
                             <p class="text-secondary category h6"><strike class="p-2">2,60 €</strike></p>
                             <div class="col ms-auto">
                                 <div class="text-secondary p-2 small text-end">Soll es eine andere Größe sein?</div>
                                 <div class="d-grid gap-2 d-flex justify-content-md-end">
-                                    <button class="btn btn-outline-secondary me-md-0 py-1 px-3" type="button">500
+                                    <button class="btn btn-outline-secondary product-op-a me-md-0 py-1 px-3"
+                                        type="button">500 g</button>
+                                    <button class="btn btn-outline-secondary product-op-b py-1 px-3" type="button">300
                                         g</button>
-                                    <button class="btn btn-outline-secondary py-1 px-3" type="button">300 g</button>
-                                    <button class="btn btn-outline-secondary py-1 px-3" type="button">250 g</button>
+                                    <button class="btn btn-outline-secondary product-op-c py-1 px-3" type="button">250
+                                        g</button>
                                 </div>
                             </div>
                         </div>
@@ -166,11 +168,49 @@
                     </div>
                 </div>
             </div>
+            <h2 class="text-center h4 pt-5">Immer frisch & lecker.</h2>
+            <p class="text-center small pt-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod
+                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo
+                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem
+                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd
+                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
     </section>
 
+    <!-- Tab Section -->
     <section>
-        <!-- Tab Section -->
+        <nav>
+            <div class="nav nav-tabs tab-title justify-content-center bg-dark" id="nav-tab" role="tablist">
+                <button class="nav-link px-md-5 py-md-4 active" id="nav-home-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                    aria-selected="true">Nährwertangabe</button>
+                <button class="nav-link px-md-5 py-md-4" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false">Zutaten</button>
+                <button class="nav-link px-md-5 py-md-4" id="nav-contact-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                    aria-selected="false">Rezepte</button>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="tab-content pt-3" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <h5>Angaben beziehen sich auf: 100 g Cherry Tomaten</h5>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <h5>tab2</h5>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <h5>tab3</h5>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
