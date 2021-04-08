@@ -209,3 +209,7 @@
 .text-warning {
   color: #f98b00 !important;
 }
+
+.td-none {
+  text-decoration: none;
+}
